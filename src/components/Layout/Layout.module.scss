@@ -1,0 +1,18 @@
+@import url("http://fonts.cdnfonts.com/css/sofia-pro");
+
+.light_mode {
+    background-color: #fff;
+    padding: 0px 9%;
+    color: #212121;
+    transition: background-color 0.3s ease;
+}
+.dark_mode {
+    background-color: #212121;
+    padding: 0px 9%;
+    color: #f4f4f4;
+    transition: background-color 0.3s ease;
+}
+
+.layout {
+    min-height: 70vh;
+}

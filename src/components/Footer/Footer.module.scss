@@ -1,0 +1,106 @@
+.footer {
+    background-color: #121212;
+    color: #f4f4f4;
+    padding: 20px 9%;
+    .flexer {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer_left p {
+        font-size: 0.8em;
+        margin: 0px;
+        margin-bottom: 25px;
+    }
+
+    .footer_seperator {
+        height: 175px;
+        width: 0.5px;
+        margin-top: 10px;
+        background-color: #a9a9a9;
+    }
+
+    .footer_link_head {
+        margin-top: 10px;
+    }
+
+    .footer_links {
+        margin-top: 20px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 0.8em;
+        color: #aaa;
+        line-height: 2em;
+    }
+
+    .twitter,
+    .github,
+    .linkedin,
+    .insta {
+        font-size: 1.4em;
+        padding: 3.5px;
+        margin-right: 10px;
+        border-radius: 2px;
+    }
+
+    .github {
+        background-color: #f4f4f4;
+        color: #212121;
+    }
+
+    .twitter {
+        background-color: #00acee;
+        color: #fff;
+    }
+
+    .linkedin {
+        background-color: #0e76a8;
+        color: #fff;
+    }
+
+    .insta {
+        background: radial-gradient(
+                circle farthest-corner at 35% 90%,
+                #fec564,
+                transparent 50%
+            ),
+            radial-gradient(
+                circle farthest-corner at 0 140%,
+                #fec564,
+                transparent 50%
+            ),
+            radial-gradient(
+                ellipse farthest-corner at 0 -25%,
+                #5258cf,
+                transparent 50%
+            ),
+            radial-gradient(
+                ellipse farthest-corner at 20% -50%,
+                #5258cf,
+                transparent 50%
+            ),
+            radial-gradient(
+                ellipse farthest-corner at 100% 0,
+                #893dc2,
+                transparent 50%
+            ),
+            radial-gradient(
+                ellipse farthest-corner at 60% -20%,
+                #893dc2,
+                transparent 50%
+            ),
+            radial-gradient(
+                ellipse farthest-corner at 100% 100%,
+                #d9317a,
+                transparent
+            ),
+            linear-gradient(
+                #6559ca,
+                #bc318f 30%,
+                #e33f5f 50%,
+                #f77638 70%,
+                #fec66d 100%
+            );
+        background-color: #bc318f;
+        color: #fff;
+    }
+}
