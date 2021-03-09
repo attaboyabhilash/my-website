@@ -1,18 +1,79 @@
-@import url("http://fonts.cdnfonts.com/css/sofia-pro");
-
 .light_mode {
     background-color: #fff;
     padding: 0px 9%;
     color: #212121;
     transition: background-color 0.3s ease;
+    font-family: "Sofia Pro", sans-serif;
+    a,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #121212 !important;
+    }
+    p,
+    label,
+    small {
+        color: #333 !important;
+    }
+    blockquote {
+        padding: 10px;
+        border-left: 4px solid #aaa;
+        background-color: #eee;
+        p {
+            margin-bottom: 0px;
+            color: #333 !important;
+        }
+    }
+    ul {
+        border-top: 1px solid #ddd !important;
+        li:first-child {
+            border-right: 1px solid #ddd !important;
+        }
+    }
 }
+
 .dark_mode {
     background-color: #212121;
     padding: 0px 9%;
     color: #f4f4f4;
     transition: background-color 0.3s ease;
+    font-family: "Sofia Pro", sans-serif;
+    a,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #f4f4f4 !important;
+    }
+    p,
+    label,
+    small {
+        color: #bbb !important;
+    }
+    blockquote {
+        padding: 10px;
+        border-left: 4px solid #f4f4f4;
+        background-color: #333;
+        p {
+            margin-bottom: 0px;
+            color: #f4f4f4 !important;
+        }
+    }
+    ul {
+        border-top: 1px solid #333 !important;
+        li:first-child {
+            border-right: 1px solid #333 !important;
+        }
+    }
 }
 
 .layout {
-    min-height: 70vh;
+    min-height: 85vh;
 }

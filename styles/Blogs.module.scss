@@ -1,0 +1,110 @@
+.blog_heading {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.blog_heading2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    a {
+        color: #000;
+        font-size: 2em;
+        font-weight: 600;
+    }
+    span {
+        color: #bbb !important;
+    }
+}
+
+.blog_details {
+    width: 800px;
+    margin: 0px auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    h1,
+    h2,
+    h3 {
+        font-weight: 600;
+    }
+    pre {
+        background-color: #121212;
+        color: #f4f4f4;
+        padding: 10px;
+        border-radius: 4px;
+    }
+    code {
+        background-color: #121212;
+        color: #f4f4f4;
+        padding: 3px 5px;
+        border-radius: 3px;
+        font-size: 0.9em;
+        font-weight: 600;
+    }
+    a {
+        color: #00b5ad !important;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    img {
+        width: 100%;
+    }
+    em {
+        display: block;
+        font-weight: 400;
+        font-size: 0.85em;
+        text-align: center;
+    }
+    blockquote {
+        em {
+            margin-top: 5px;
+            text-align: end;
+        }
+    }
+    .tags {
+        padding: 40px 0px;
+        span {
+            margin-right: 10px;
+            margin-bottom: 10px;
+            font-size: 1em;
+            padding: 5px 10px;
+        }
+    }
+    ul {
+        border-top: none !important;
+        li:first-child {
+            border-right: none !important;
+        }
+    }
+}
+
+.blog_grid {
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 25em));
+    margin: auto;
+    margin-bottom: 0px;
+    padding-bottom: 50px;
+    justify-content: center;
+    .meta_data {
+        small {
+            font-weight: 300;
+        }
+        p {
+            color: #666;
+            font-weight: 300;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+    }
+    .tags {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        span {
+            text-transform: capitalize;
+            margin-bottom: 8px;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.main_block {
+    max-width: 500px;
+    margin: 30px auto;
+    margin-bottom: 0px;
+    padding-bottom: 50px;
+    .sub_form {
+        display: flex;
+        input {
+            margin-right: 5px;
+        }
+        button {
+            background-color: #00b5ad;
+            border-color: #00b5ad;
+        }
+    }
+    .sub_title {
+        opacity: 0.75;
+    }
+}

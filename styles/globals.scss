@@ -11,6 +11,65 @@ body {
 }
 
 a {
-    color: inherit;
     text-decoration: none;
+}
+
+a:hover {
+    color: #40e0d0 !important;
+}
+
+.ant-result.ant-result-404 {
+    .ant-result-title {
+        font-size: 4em;
+        font-weight: 600;
+    }
+}
+
+.ant-spin.ant-spin-lg.ant-spin-spinning {
+    margin: 300px 50%;
+    width: fit-content;
+    span {
+        i {
+            background-color: #00b5ad;
+        }
+    }
+}
+
+.ant-card.ant-card-bordered.ant-card-hoverable {
+    position: relative !important;
+    .ant-card-meta-title {
+        font-size: 1.3em;
+    }
+    .ant-card-cover {
+        height: 165px;
+        overflow: hidden;
+    }
+    .ant-card-actions {
+        position: absolute !important;
+        bottom: 0px !important;
+        width: 100% !important;
+        background-color: inherit;
+        color: inherit;
+        a:hover {
+            color: #40e0d0 !important;
+        }
+    }
+}
+
+.light_mode {
+    .ant-card-actions {
+        border-top: 1px solid #f0f0f0 !important;
+        li:first-child {
+            border-right: 1px solid #f0f0f0 !important;
+        }
+    }
+}
+
+.dark_mode {
+    .ant-card-actions {
+        border-top: 1px solid #333 !important;
+        li:first-child {
+            border-right: 1px solid #333 !important;
+        }
+    }
 }

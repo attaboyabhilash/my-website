@@ -1,0 +1,60 @@
+.about_card {
+    position: relative;
+    width: 100%;
+    margin: 50px 0px;
+    overflow: hidden;
+    .about_image {
+        position: absolute;
+        right: 1px;
+        top: 1px;
+        z-index: 10;
+        width: 275px;
+        height: 194px;
+        img {
+            margin-top: -50px;
+        }
+    }
+
+    .card_text h3 {
+        margin: 0px;
+    }
+
+    .card_text small {
+        font-size: 0.8em;
+    }
+
+    .card_text p {
+        line-height: 1em;
+        font-size: 0.9em;
+    }
+
+    .dark_mode .card_text p {
+        color: #f4f4f4;
+    }
+
+    .first {
+        margin-top: 25px;
+    }
+}
+
+.contact_form {
+    text-align: center;
+    h3 {
+        font-size: 1.6em;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+    button {
+        width: 150px;
+        background-color: #00b5ad !important;
+        border-color: #00b5ad !important;
+    }
+    button:hover {
+        background-color: #00b5ad;
+        border-color: #00b5ad;
+    }
+    button:active {
+        background-color: #00b5ad;
+        border-color: #00b5ad;
+    }
+}

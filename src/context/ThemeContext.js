@@ -3,8 +3,8 @@ import React, { useState, useEffect, createContext } from "react"
 export const ThemeContext = createContext()
 
 const initialState =
-    false ||
-    (typeof window !== "undefined" && JSON.parse(localStorage.getItem("theme")))
+    (typeof window !== "undefined" && window.localStorage.getItem("theme")) ||
+    false
 
 function ThemeContextProvider(props) {
     const [darkMode, setDarkMode] = useState(initialState)
@@ -15,7 +15,7 @@ function ThemeContextProvider(props) {
 
     useEffect(() => {
         if (typeof window !== "undefined") {
-            localStorage.setItem("theme", JSON.stringify(darkMode))
+            window.localStorage.setItem("theme", darkMode)
         }
     }, [darkMode])
 

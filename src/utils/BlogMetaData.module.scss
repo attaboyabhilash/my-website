@@ -1,0 +1,33 @@
+.meta_data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+    width: 100%;
+    p {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+    .icons {
+        margin-left: 0px;
+        .twitter,
+        .linkedin {
+            font-size: 1.6em;
+            padding: 3.5px 4px;
+            margin-top: 5px;
+            margin-left: 15px;
+            border-radius: 2px;
+        }
+        .twitter {
+            background-color: #00acee;
+            color: #fff;
+        }
+
+        .linkedin {
+            background-color: #0e76a8;
+            color: #fff;
+        }
+    }
+}

@@ -9,12 +9,14 @@ const Footer = () => {
             <div className={styles.flexer}>
                 <div className={styles.footer_left}>
                     <Link href="/">
-                        <Image
-                            src="/assets/vectors/Logo.svg"
-                            alt="my-logo"
-                            width="140px"
-                            height="40px"
-                        />
+                        <a>
+                            <Image
+                                src="/assets/vectors/Logo.svg"
+                                alt="my-logo"
+                                width="140px"
+                                height="40px"
+                            />
+                        </a>
                     </Link>
                     <p>Full Stack Developer</p>
                     <p>
@@ -50,53 +52,93 @@ const Footer = () => {
                 </div>
                 <div className={styles.footer_seperator}></div>
                 <div className={styles.footer_link_head}>
-                    <Link href="/">Home</Link>
+                    <Link href="/">
+                        <a>Home</a>
+                    </Link>
                     <div className={styles.footer_links}>
-                        <Link href="/homepage">Homepage</Link>
+                        <Link href="/homepage">
+                            <a>Homepage</a>
+                        </Link>
                         <br />
-                        <Link href="/resume">Hire Me</Link>
+                        <Link href="/resume">
+                            <a>Hire Me</a>
+                        </Link>
                         <br />
-                        <Link href="/projects">Projects</Link>
+                        <Link href="/projects">
+                            <a>Projects</a>
+                        </Link>
                     </div>
                 </div>
                 <div className={styles.footer_link_head}>
-                    <Link href="/about">About</Link>
+                    <Link href="/about">
+                        <a>About</a>
+                    </Link>
                     <div className={styles.footer_links}>
-                        <Link href="/about">About Me</Link>
+                        <Link href="/about">
+                            <a>About Me</a>
+                        </Link>
                         <br />
-                        <Link href="/resume">Resume</Link>
+                        <Link href="/resume">
+                            <a>Resume</a>
+                        </Link>
                         <br />
-                        <Link href="/work-experience">Work Experience</Link>
+                        <Link href="/work-experience">
+                            <a>Work Experience</a>
+                        </Link>
                     </div>
                 </div>
                 <div className={styles.footer_link_head}>
-                    <Link href="/conatct">Contact</Link>
+                    <Link href="/conatct">
+                        <a>Contact</a>
+                    </Link>
                     <div className={styles.footer_links}>
-                        <Link href="/contact_me">Contact Me</Link>
+                        <Link href="/contact_me">
+                            <a>Contact Me</a>
+                        </Link>
                         <br />
-                        <Link href="/social">Social</Link>
+                        <Link href="/social">
+                            <a>Social</a>
+                        </Link>
                         <br />
-                        <Link href="/sponser">Sponser</Link>
+                        <Link href="/sponser">
+                            <a>Sponser</a>
+                        </Link>
                     </div>
                 </div>
                 <div className={styles.footer_link_head}>
-                    <Link href="/blogs">Blogs</Link>
+                    <Link href="/blogs">
+                        <a>Blogs</a>
+                    </Link>
                     <div className={styles.footer_links}>
-                        <Link href="/recent-blogs">Recent Blogs</Link>
+                        <Link href="/recent-blogs">
+                            <a>Recent Blogs</a>
+                        </Link>
                         <br />
-                        <Link href="/most">Most Read Blogs</Link>
+                        <Link href="/most">
+                            <a>Most Read Blogs</a>
+                        </Link>
                         <br />
-                        <Link href="/first">First Blog</Link>
+                        <Link href="/first">
+                            <a>First Blog</a>
+                        </Link>
                     </div>
                 </div>
                 <div className={styles.footer_link_head}>
-                    <Link href="/portfolio">Portfolio</Link>
+                    <Link href="/portfolio">
+                        <a>Portfolio</a>
+                    </Link>
                     <div className={styles.footer_links}>
-                        <Link href="/javascript">Javascript</Link>
+                        <Link href="/javascript">
+                            <a>Javascript</a>
+                        </Link>
                         <br />
-                        <Link href="/react">ReactJS</Link>
+                        <Link href="/react">
+                            <a>ReactJS</a>
+                        </Link>
                         <br />
-                        <Link href="/react-test">React Testing</Link>
+                        <Link href="/react-test">
+                            <a>React Testing</a>
+                        </Link>
                     </div>
                 </div>
             </div>

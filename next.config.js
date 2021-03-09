@@ -1,5 +1,5 @@
-module.exports = {
-    env: {
-        PORT: 5000,
-    },
-}
+const withMDX = require("@next/mdx")()
+
+module.exports = withMDX({
+    pageExtensions: ["js", "mdx"],
+})

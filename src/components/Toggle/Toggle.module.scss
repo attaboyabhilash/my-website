@@ -15,7 +15,7 @@
         height: 1.5em;
         width: 3em;
         cursor: pointer;
-        border: 2px solid #212121;
+        border: 1.6px solid #212121;
         border-radius: 10em;
         background-color: #ffffff;
         transition: background-color 250ms;
@@ -27,7 +27,7 @@
     }
 
     .toggle_button {
-        transform: translate(1.6em, 0.15em);
+        transform: translate(1.55em, 0.15em);
         position: absolute;
         height: 1em;
         width: 1em;
@@ -40,7 +40,7 @@
     .toggle_checkbox:checked ~ .toggle_slot .toggle_button {
         background-color: #121212;
         box-shadow: inset 0px 0px 0px 0.75em white;
-        transform: translate(0.16em, 0.15em);
+        transform: translate(0.18em, 0.15em);
     }
 
     .sun_icon {
@@ -55,7 +55,7 @@
         height: 1em;
         width: 1em;
         opacity: 1;
-        transform: translate(0.2em, 0.14em) rotate(2deg);
+        transform: translate(0.2em, 0.15em) rotate(2deg);
         transform-origin: 50% 50%;
         transition: opacity 150ms,
             transform 500ms cubic-bezier(0.26, 2, 0.46, 0.71);
