@@ -5,6 +5,7 @@
     "scripts": {
         "dev": "next dev",
         "build": "next build",
+        "export": "next export",
         "start": "next start"
     },
     "dependencies": {
@@ -18,8 +19,5 @@
         "react-icons": "^4.2.0",
         "sass": "^1.32.8",
         "styled-components": "^5.2.1"
-    },
-    "devDependencies": {
-        "file-loader": "^6.2.0"
     }
 }
