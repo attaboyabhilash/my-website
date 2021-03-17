@@ -1,45 +1,43 @@
-import { createRef, useContext } from "react"
+import { useState, useRef, useContext } from "react"
 import { Form, Input, Button, Card, message } from "antd"
+import emailjs from "emailjs-com"
 import styles from "./AboutCard.module.scss"
 import { ThemeContext } from "../../context/ThemeContext"
 
-function encode(data) {
-    return Object.keys(data)
-        .map(
-            key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-        )
-        .join("&")
-}
-
 const ContactCard = () => {
+    const [isLoading, setIsLoading] = useState(false)
     const { darkMode } = useContext(ThemeContext)
     const [form] = Form.useForm()
-    const formRef = createRef()
+    const formRef = useRef()
     const { TextArea } = Input
 
     const onFinish = values => {
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact-form", ...values }),
-        })
-            .then(() => formRef.current.resetFields())
-            .then(() =>
-                message.success({
-                    content: "Your message was successfully delivered!",
-                    style: {
-                        marginTop: "30vh",
-                    },
-                })
+        setIsLoading(true)
+        emailjs
+            .send(
+                "service_sdasfoa",
+                "template_g2gd5qp",
+                values,
+                "user_RGIAuejdUyP5Xaeo3BKsn"
             )
-            .catch(error =>
-                message.error({
-                    content: "There was an error while sending your message.",
-                    style: {
-                        marginTop: "30vh",
-                    },
-                })
-            )
+            .then(result => {
+                if (result.text === "OK") {
+                    message.success({
+                        content: "Your message was successfully delivered!",
+                    })
+                    setIsLoading(false)
+                    formRef.current !== null && formRef.current.resetFields()
+                } else {
+                    message.error({
+                        content:
+                            "There was an error while sending your message.",
+                    })
+                    setIsLoading(false)
+                    formRef.current !== null && formRef.current.resetFields()
+                }
+            })
+            .catch(error => console.log(error))
+        setIsLoading(false)
     }
     return (
         <Card
@@ -63,11 +61,8 @@ const ContactCard = () => {
                     layout="vertical"
                     form={form}
                     ref={formRef}
-                    data-netlify="true"
-                    data-netlify-honeypot="bot-field"
                     onFinish={onFinish}
                 >
-                    <input type="hidden" name="form-name" value="contact" />
                     <Form.Item
                         label="Name"
                         name="name"
@@ -179,7 +174,11 @@ const ContactCard = () => {
                         />
                     </Form.Item>
                     <Form.Item>
-                        <Button type="primary" htmlType="submit">
+                        <Button
+                            type="primary"
+                            htmlType="submit"
+                            loading={isLoading}
+                        >
                             SEND
                         </Button>
                     </Form.Item>
