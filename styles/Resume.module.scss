@@ -1,0 +1,55 @@
+.head {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 35px auto;
+    align-items: center;
+    p {
+        cursor: pointer;
+        color: #00b5ad !important;
+        display: flex;
+        align-items: center;
+        svg {
+            margin-right: 5px;
+        }
+    }
+}
+
+.content {
+    margin: 50px;
+}
+
+.empty {
+    width: 100%;
+    height: 75px;
+    background-color: inherit;
+}
+
+.resume_card {
+    width: 80%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+    .resume_card {
+        width: 100%;
+    }
+    .content {
+        margin: 30px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .resume_card {
+        width: 100%;
+    }
+    .content {
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .content {
+        margin: 0px;
+    }
+}

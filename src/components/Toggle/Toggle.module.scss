@@ -89,3 +89,12 @@
         transform: translate(1.6em, 0.1em) rotate(-15deg);
     }
 }
+
+@media only screen and (max-width: 800px) {
+    .toggles {
+        margin: 0px;
+        width: fit-content;
+        margin-top: 20px;
+        padding-left: 0px;
+    }
+}

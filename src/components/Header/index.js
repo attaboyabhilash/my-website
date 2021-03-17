@@ -1,9 +1,24 @@
+import { useState, useContext } from "react"
 import Link from "next/link"
 import Toggle from "../Toggle/Toggle"
 import Image from "next/image"
 import styles from "./Header.module.scss"
+import { IoMenuOutline } from "react-icons/io5"
+import { Drawer } from "antd"
+import { ThemeContext } from "../../context/ThemeContext"
 
 const Header = () => {
+    const { darkMode } = useContext(ThemeContext)
+    const [visible, setVisible] = useState(false)
+
+    const showDrawer = () => {
+        setVisible(true)
+    }
+
+    const onClose = () => {
+        setVisible(false)
+    }
+
     return (
         <div className={styles.header}>
             <div className={styles.flexer}>
@@ -33,6 +48,47 @@ const Header = () => {
                     </Link>
                     <Toggle />
                 </div>
+                <div className={styles.menu_bar} onClick={showDrawer}>
+                    <IoMenuOutline />
+                </div>
+                <Drawer
+                    placement="right"
+                    closable={true}
+                    onClose={onClose}
+                    visible={visible}
+                    headerStyle={
+                        darkMode
+                            ? { backgroundColor: "#333" }
+                            : { backgroundColor: "#FFF" }
+                    }
+                    drawerStyle={
+                        darkMode
+                            ? { backgroundColor: "#333" }
+                            : { backgroundColor: "#FFF" }
+                    }
+                >
+                    <p onClick={onClose}>
+                        <Link href="/">
+                            <a>Home</a>
+                        </Link>
+                    </p>
+                    <p onClick={onClose}>
+                        <Link href="/about">
+                            <a>About</a>
+                        </Link>
+                    </p>
+                    <p onClick={onClose}>
+                        <Link href="/blogs">
+                            <a>Blogs</a>
+                        </Link>
+                    </p>
+                    <p onClick={onClose}>
+                        <Link href="/portfolio">
+                            <a>Portfolio</a>
+                        </Link>
+                    </p>
+                    <Toggle />
+                </Drawer>
             </div>
         </div>
     )

@@ -19,6 +19,28 @@ const Footer = () => {
                         </a>
                     </Link>
                     <p>Full Stack Developer</p>
+                    <div className={styles.small_nav}>
+                        <p>
+                            <Link href="/">
+                                <a>Home</a>
+                            </Link>
+                        </p>
+                        <p>
+                            <Link href="/about">
+                                <a>About</a>
+                            </Link>
+                        </p>
+                        <p>
+                            <Link href="/blogs">
+                                <a>Blogs</a>
+                            </Link>
+                        </p>
+                        <p>
+                            <Link href="/portfolio">
+                                <a>Portfolio</a>
+                            </Link>
+                        </p>
+                    </div>
                     <p>
                         Copyright &copy; 2021 attaboyabhilash.com, <br /> All
                         Rights Reserved.
@@ -56,7 +78,7 @@ const Footer = () => {
                         <a>Home</a>
                     </Link>
                     <div className={styles.footer_links}>
-                        <Link href="/homepage">
+                        <Link href="/">
                             <a>Homepage</a>
                         </Link>
                         <br />
@@ -64,7 +86,7 @@ const Footer = () => {
                             <a>Hire Me</a>
                         </Link>
                         <br />
-                        <Link href="/projects">
+                        <Link href="/portfolio">
                             <a>Projects</a>
                         </Link>
                     </div>
@@ -82,17 +104,17 @@ const Footer = () => {
                             <a>Resume</a>
                         </Link>
                         <br />
-                        <Link href="/work-experience">
+                        <Link href="/portfolio">
                             <a>Work Experience</a>
                         </Link>
                     </div>
                 </div>
                 <div className={styles.footer_link_head}>
-                    <Link href="/conatct">
+                    <Link href="/about">
                         <a>Contact</a>
                     </Link>
                     <div className={styles.footer_links}>
-                        <Link href="/contact_me">
+                        <Link href="/about">
                             <a>Contact Me</a>
                         </Link>
                         <br />
@@ -110,15 +132,15 @@ const Footer = () => {
                         <a>Blogs</a>
                     </Link>
                     <div className={styles.footer_links}>
-                        <Link href="/recent-blogs">
+                        <Link href="/blogs">
                             <a>Recent Blogs</a>
                         </Link>
                         <br />
-                        <Link href="/most">
+                        <Link href="/blogs">
                             <a>Most Read Blogs</a>
                         </Link>
                         <br />
-                        <Link href="/first">
+                        <Link href="/blog/how-to-structure-your-react-application">
                             <a>First Blog</a>
                         </Link>
                     </div>
@@ -128,15 +150,15 @@ const Footer = () => {
                         <a>Portfolio</a>
                     </Link>
                     <div className={styles.footer_links}>
-                        <Link href="/javascript">
+                        <Link href="/portfolio">
                             <a>Javascript</a>
                         </Link>
                         <br />
-                        <Link href="/react">
+                        <Link href="/portfolio">
                             <a>ReactJS</a>
                         </Link>
                         <br />
-                        <Link href="/react-test">
+                        <Link href="/portfolio">
                             <a>React Testing</a>
                         </Link>
                     </div>

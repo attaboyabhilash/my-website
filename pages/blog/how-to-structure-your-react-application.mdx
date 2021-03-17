@@ -1,0 +1,246 @@
+import { Breadcrumb } from "antd"
+import Link from "next/link"
+import styles from "../../styles/Blogs.module.scss"
+import Meta from "../../src/Meta"
+import Head from "next/head"
+import BlogMetaData from "../../src/utils/BlogMetaData"
+import Tags from "../../src/components/Tags"
+import { IoArrowBackSharp } from "react-icons/io5"
+
+<Meta
+    title="How to structure your react application | AttaboyAbhilash"
+    description="Have you ever felt confused on how your react application should be structured so that its easy for other coders to read as well as it helps in optimising your application at the same time. This blog will help you go through step by step process on how to structure you react app."
+    keywords="Javascript, ReactJS, Frontend, Coding, Programming"
+    image="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80.jpg"
+    url="/blog/how-to-structure-your-react-application"
+/>
+
+<Head>
+    <meta
+        property="og:title"
+        content="How to structure your react application | AttaboyAbhilash"
+    />
+    <meta
+        property="og:image"
+        content="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80.jpg"
+    />
+    <meta
+        property="og:description"
+        content="Have you ever felt confused on how your react application should be structured so that its easy for other coders to read as well as it helps in optimising your application at the same time. This blog will help you go through step by step process on how to structure you react app."
+    />
+    <meta
+        property="og:url"
+        content={`https://www.attaboyabhilash.com/blog/how-to-structure-your-react-application`}
+    />
+</Head>
+
+<div className={styles.head}>
+  <Breadcrumb className={styles.blog_heading2}>
+    <Breadcrumb.Item>
+        <Link href="/blogs">
+            <a>Blogs</a>
+        </Link>
+    </Breadcrumb.Item>
+    <Breadcrumb.Item>How to structure your react application</Breadcrumb.Item>
+  </Breadcrumb>
+
+  <Link href="/blogs">
+      <a className={styles.back_link}><IoArrowBackSharp /> Back</a>
+  </Link>
+</div>
+
+<div className={styles.blog_details}>
+
+# How to structure your react application
+
+![Thumbnail](https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80.jpg)
+_Photo by [Andrew Neel](https://unsplash.com/@andrewtneel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
+
+<BlogMetaData date="March 10, 2020" readMin="3 min read" />
+
+If you are a programmer, you might have faced the issue of structuring your code in a way that it looks good, is readable to other coders as well as can be scalable for future requirements.
+This has happened or will happen to pretty much all developers over the course of their career:
+
+-   You build an application for a client with a team of a few developers, everything works very well all together.
+-   Your client requires new features, fine, you add them.
+-   Your client asks you to remove some features and add new ones, it starts to get complicated, you didn’t think about that, but you make it work even though it’s not perfect.
+-   Your client now wants you to change another feature, remove some others and add another one that wasn’t expected. At that point, you grab the scotch tape and start patching some code. You are not really proud of it but it works.
+-   6 months later, after some other iterations, the code of the application gets really complicated to read and understand, everything looks like some Italian spaghetti pasta.
+-   Until the day your client decides to create a new version of the application, with some fresh new code and features. In some cases, you end-up keeping complicated legacy code that lives with the new code, and this becomes even harder to maintain. And all of this happened because your app wasn’t properly designed from the beginning.
+
+I will be telling few methods for a React Application where you can structure you code easily and keep it from getting clustered before it is too late, so let’s begin.
+
+**Note – These methods can be subjective and will depend on your requirements.**
+
+We will go through 3 main methods in this blog which are as follows:
+
+-   Basic method provided by ReactJS
+-   The popular approach
+-   My preferred method
+
+## Basic method provided by ReactJS
+
+React team tells us to structure our file/folders by two categories, **Feature Type** or **File Type**
+
+1. ### Feature Type
+    You can place all your files such as js, css, test, etc. in one common folder grouped by the feature type.
+
+```
+/common
+  -	Avatar.js
+  -	Avatar.css
+  -	APIUtils.js
+  -	APIUtils.test.js
+/feed
+  -	index.js
+  -	Feed.js
+  -	Feed.css
+  -	FeedStory.js
+  -	FeedStory.test.js
+  -	FeedAPI.js
+/profile
+  -	index.js
+  -	Profile.js
+  -	ProfileHeader.js
+  -	ProfileHeader.css
+  -	ProfileAPI.js
+```
+
+2. ### File Type
+    Another way to structure is by separating all file types in one particular folder, like all API files are in one folder, all css are in one folder, all js files are in one folder, and likewise.
+
+```
+/api
+  - APIUtils.js
+  - APIUtils.test.js
+  - ProfileAPI.js
+  - UserAPI.js
+/components
+  /scripts
+  	- Avatar.js
+  	- Feed.js
+    - FeedStory.js
+	- Profile.js
+  	- ProfileHeader.js
+  /styles
+	- Avatar.css
+  	- Feed.css
+  	- ProfileHeader.css
+  /tests
+	  - FeedStory.test.js
+```
+
+I am not sure if anyone uses this approach but React Team gave this as a way to start. You can find the ReactJS blog <a href="https://reactjs.org/docs/faq-structure.html" target="_blank">here</a>
+
+## The popular approach
+
+You can structure you files/folder by file types where all the files are present in the src folder. Each component irrespective of its size is inside the **components** folder. All the routes are inside **router** folder. All the files that are wrappers like the **Layout.js** can be placed inside the **containers** folder. This method will look something like this.
+
+```
+/src
+  /components
+    - Header.js
+    - Counter.js
+    - Percentage.js
+    - Footer.js
+  /containers
+    - Layout.js
+    - Home.js
+    - Profile.js
+  /tests
+    - Counter.test.js
+    - Percentage.test.js
+  /styles
+    - globals.css
+    - Counter.module.css
+    - Percentage.module.css
+  /assets
+    /images
+    /videos
+    /vectors
+  - routes
+    - PublicRoute.js
+    - PrivateRoute.js
+    - AdminRoute.js
+  /redux
+    - store.js
+    /reducers
+    /actions
+  /utils
+    - maps.js
+    - countries.js
+```
+
+When you structure your files by type, as your application grows, it often becomes difficult to maintain. By the time you realize this, it’s too late and you will have to invest a lot of time and money to change everything, or to support what you have for the next few years.
+
+## My preferred method
+
+You need to create your structure in such a way that each component, service (a feature) has everything it needs to work on its own, such as its own styles, images, translations, set of actions as well as unit or integration tests. You can see a feature like an independent piece of code you will use in your app (a bit like node modules).
+
+To work properly, they should follow these rules:
+
+-   A component can define nested components or services. It cannot use or define scenes.
+-   A scene can define nested components, scenes or services.
+-   A service can define nested services. It cannot use or define components or scenes.
+-   Nested features can only use from its parent.
+
+```
+/src
+  /components
+    /Button
+    /Notifications
+      /components
+        /ButtonDismiss
+          /images
+          /locales
+          /specs
+          - index.js
+          - styles.scss
+      - index.js
+      - styles.scss
+  /containers
+    /Home
+      /components
+        /ButtonLike
+      /services
+        /processData
+      - index.js
+      - styles.scss
+    /Sign
+      /components
+        /FormField
+      /scenes
+        /Login
+        /Register
+          /locales
+          - specs.js
+          - index.js
+          - styles.scss
+  /services
+    /api
+    /geolocation
+    /session
+      - actions.js
+      - index.js
+      - reducer.js
+    /users
+      - actions.js
+      - api.js
+      - reducer.js
+  - index.js
+  - store.js
+```
+
+I would recommend you to limit the number of nested folders to 3–4 levels. Normalizing your structure by limiting nesting will avoid complexity and help you maximize the reusability of your code.
+
+Thank You for reading this blog. Be sure to share it.
+
+---
+
+<div className={styles.tags}>
+    <Tags
+        tags={["Javascript", "ReactJS", "Frontend", "Coding", "Programming"]}
+    />
+</div>
+
+</div>

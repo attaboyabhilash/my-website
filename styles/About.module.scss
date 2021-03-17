@@ -3,3 +3,19 @@
     margin: 15px auto 0px auto;
     padding: 15px 0px;
 }
+
+.about_transit {
+    transition: all 450ms ease-in-out;
+}
+
+@media only screen and (max-width: 1000px) {
+    .about_me {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .about_me {
+        width: 100%;
+    }
+}

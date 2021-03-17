@@ -65,3 +65,50 @@
         content: "Postgres";
     }
 }
+
+@media only screen and (max-width: 1000px) {
+    .hero_section {
+        .left_content {
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                width: 300px;
+            }
+        }
+        img {
+            width: 300px;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .hero_section {
+        text-align: center;
+        padding: 100px 0px;
+        .flexer {
+            display: block;
+        }
+        .left_content {
+            p {
+                width: 200px;
+                margin: 20px auto;
+            }
+            .__buttons {
+                button {
+                    margin: 25px auto;
+                    margin-bottom: 50px;
+                }
+                button:first-child {
+                    margin-right: 30px;
+                }
+                button:last-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+        img {
+            width: 300px;
+        }
+    }
+}

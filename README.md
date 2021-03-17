@@ -1,34 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## My Portfolio Website
 
-## Getting Started
+### Hi everyone, this is my porfolio website which is created in order to showcase all my projects in one place.
 
-First, run the development server:
+##### Be sure to check it out!
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+[Website Link](https://www.attaboyabhilash.com/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Hi, I am Abhilash Negi. I am a Full-Stack MERN Developer.  
+This is my ambitious project of creating a personal portfolio website.  
+I hope you all will like this one.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+> PFB the process I followed while creating this project
+>
+> -   Created the UI Design of all pages in Figma [Figma Link](https://www.figma.com/file/GFVG8I6yBmhKEMVUoUNBOA/personal-website?node-id=0%3A1)
+> -   Started the Initial Development with create-next-app
+> -   Made the Blog page with Mdx.
+> -   Left the portfolio page for the end because it has some design elements that needs to be changed.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+> This is the basic blueprint.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Connect with me:
 
-## Learn More
+[<img align="left" alt="attaboyabhilash.com" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
+[<img align="left" alt="attaboyabhilash | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
+[<img align="left" alt="attaboyabhilash | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
+[<img align="left" alt="attaboyabhilash | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[website]: https://attaboyabhilash.com
+[twitter]: https://twitter.com/attaboyabhilash
+[instagram]: https://instagram.com/attaboyabhilash
+[linkedin]: https://www.linkedin.com/in/abhilash-negi-247644180/

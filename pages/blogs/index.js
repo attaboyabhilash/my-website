@@ -19,7 +19,7 @@ const Blogs = () => {
                 {blogData.map(post => {
                     return (
                         <Card
-                            key={post.guid}
+                            key={post.id}
                             style={
                                 darkMode
                                     ? {
@@ -49,7 +49,7 @@ const Blogs = () => {
                         >
                             <Tooltip
                                 title={post.title}
-                                color={darkMode ? "#666" : "#000"}
+                                color={"#000"}
                                 placement="right"
                             >
                                 <Meta title={post.title} />
@@ -58,7 +58,7 @@ const Blogs = () => {
                                 <small>Published - {post.pubDate}</small>
                                 <Tooltip
                                     title={post.description}
-                                    color={darkMode ? "#666" : "#000"}
+                                    color={"#000"}
                                     placement="right"
                                 >
                                     <p>

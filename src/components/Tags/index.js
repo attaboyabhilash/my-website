@@ -13,11 +13,13 @@ const index = ({ tags }) => {
                               backgroundColor: "#000",
                               borderColor: "#000",
                               color: "#fff",
+                              cursor: "pointer",
                           }
                         : {
                               backgroundColor: "#ddd",
                               borderColor: "#ddd",
                               color: "#000",
+                              cursor: "pointer",
                           }
                 }
                 key={tags.indexOf(tag)}

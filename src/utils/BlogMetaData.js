@@ -4,11 +4,11 @@ import styles from "./BlogMetaData.module.scss"
 const BlogMetaData = ({ date, readMin }) => {
     return (
         <div className={styles.meta_data}>
-            <p>
+            <h4>
                 Published - {date} | {readMin}
-            </p>
-            <p>
-                <p>Share</p>
+            </h4>
+            <h4>
+                <h4>Share | </h4>
                 <div className={styles.icons}>
                     <a
                         target="_blank"
@@ -23,7 +23,7 @@ const BlogMetaData = ({ date, readMin }) => {
                         <FaLinkedinIn className={styles.linkedin} />
                     </a>
                 </div>
-            </p>
+            </h4>
         </div>
     )
 }

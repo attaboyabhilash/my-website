@@ -65,11 +65,46 @@ a:hover {
     }
 }
 
-.dark_mode {
-    .ant-card-actions {
-        border-top: 1px solid #333 !important;
-        li:first-child {
-            border-right: 1px solid #333 !important;
+.ant-drawer-header-no-title {
+    margin-bottom: 50px;
+    button {
+        background-color: #ff4d4f;
+        color: #f4f4f4;
+        top: 20px;
+        right: 22.5px;
+        padding: 5px;
+        border-radius: 3px;
+        padding-right: 5px !important;
+        span {
+            font-size: 1em;
+            font-weight: 700;
         }
+    }
+}
+
+.ant-drawer-body {
+    a {
+        font-size: 1.2em;
+        font-weight: 500 !important;
+        color: #00b5ad !important;
+    }
+}
+
+.ant-form-item-required::before {
+    display: none !important;
+}
+
+.ant-form-item-explain.ant-form-item-explain-error {
+    text-align: left;
+    font-size: 0.8em;
+    font-weight: 300;
+    div {
+        color: #ff4d4f !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .ant-spin.ant-spin-lg.ant-spin-spinning {
+        margin: 300px 45%;
     }
 }

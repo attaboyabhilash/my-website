@@ -2,16 +2,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 50px auto;
+    margin: 40px auto;
     width: 100%;
-    p {
+    h4 {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 0px;
     }
     .icons {
-        margin-left: 0px;
+        margin-left: -5px;
         .twitter,
         .linkedin {
             font-size: 1.6em;
@@ -28,6 +28,22 @@
         .linkedin {
             background-color: #0e76a8;
             color: #fff;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .meta_data {
+        display: block;
+        h4 {
+            width: fit-content;
+            margin-top: 7px;
+        }
+        .icons {
+            .twitter,
+            .linkedin {
+                margin-top: 15px;
+            }
         }
     }
 }
