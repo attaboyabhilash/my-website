@@ -30,6 +30,7 @@ const Header = () => {
                             width="140px"
                             height="70px"
                             className={styles.main_logo}
+                            priority
                         />
                     </a>
                 </Link>

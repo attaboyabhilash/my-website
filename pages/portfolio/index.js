@@ -10,8 +10,9 @@ const Portfolio = () => {
                 <Image
                     src="/assets/vectors/warning.svg"
                     alt="warning"
-                    width="200px"
-                    height="200px"
+                    width="150px"
+                    height="150px"
+                    priority
                 />
                 <h2>Under Construction</h2>
                 <p>This page will be live soon</p>

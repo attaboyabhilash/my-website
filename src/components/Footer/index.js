@@ -15,6 +15,7 @@ const Footer = () => {
                                 alt="my-logo"
                                 width="140px"
                                 height="40px"
+                                priority
                             />
                         </a>
                     </Link>

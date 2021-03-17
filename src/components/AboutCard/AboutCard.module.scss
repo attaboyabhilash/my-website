@@ -2,17 +2,17 @@
     position: relative;
     width: 100%;
     margin: 50px 0px;
-    overflow: hidden;
     .about_image {
         position: absolute;
-        right: 1px;
-        top: 1px;
+        right: 2px;
+        top: 2.5px;
         z-index: 10;
         width: 275px;
-        height: 194px;
+        height: 190px;
+        overflow: hidden;
+        border-radius: 2px;
         img {
             margin-top: -50px;
-            border-radius: 2px;
         }
     }
 
@@ -68,7 +68,7 @@
             right: 10px;
             top: 10px;
             width: 150px;
-            height: 95px;
+            height: 150px;
             img {
                 border-radius: 3px;
             }
@@ -92,7 +92,7 @@
             right: 10px;
             top: 10px;
             width: 100px;
-            height: 50px;
+            height: 100px;
         }
 
         .card_text p {
