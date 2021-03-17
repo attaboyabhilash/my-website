@@ -56,6 +56,15 @@ a:hover {
     }
 }
 
+.ant-switch.ant-switch-checked {
+    background-color: #000 !important;
+}
+
+.ant-switch:focus,
+.ant-switch.ant-switch-checked:focus {
+    box-shadow: none !important;
+}
+
 .light_mode {
     .ant-card-actions {
         border-top: 1px solid #f0f0f0 !important;

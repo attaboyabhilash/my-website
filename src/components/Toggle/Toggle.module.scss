@@ -3,90 +3,10 @@
     width: fit-content;
     margin-top: 0px;
     padding-left: 45px;
-    .toggle_checkbox {
-        position: absolute;
-        opacity: 0;
-        height: 0;
-        width: 0;
-    }
 
-    .toggle_slot {
-        position: relative;
-        height: 1.5em;
-        width: 3em;
-        cursor: pointer;
-        border: 1.6px solid #212121;
-        border-radius: 10em;
-        background-color: #ffffff;
-        transition: background-color 250ms;
-    }
-
-    .toggle_checkbox:checked ~ .toggle_slot {
-        background-color: #212121;
-        border: 2px solid #f4f4f4;
-    }
-
-    .toggle_button {
-        transform: translate(1.55em, 0.15em);
-        position: absolute;
-        height: 1em;
-        width: 1em;
-        border-radius: 50%;
-        background-color: #212121;
-        box-shadow: inset 0px 0px 0px 0.1em #121212;
-        transition: background-color 250ms, border-color 250ms, transform 500ms;
-    }
-
-    .toggle_checkbox:checked ~ .toggle_slot .toggle_button {
-        background-color: #121212;
-        box-shadow: inset 0px 0px 0px 0.75em white;
-        transform: translate(0.18em, 0.15em);
-    }
-
-    .sun_icon {
-        position: absolute;
-        height: 1em;
-        width: 1em;
-        color: #000000;
-    }
-
-    .sun_icon_wrapper {
-        position: absolute;
-        height: 1em;
-        width: 1em;
-        opacity: 1;
-        transform: translate(0.2em, 0.15em) rotate(2deg);
-        transform-origin: 50% 50%;
-        transition: opacity 150ms,
-            transform 500ms cubic-bezier(0.26, 2, 0.46, 0.71);
-    }
-
-    .toggle_checkbox:checked ~ .toggle_slot .sun_icon_wrapper {
-        opacity: 0;
-        transform: translate(0.2em, 0.1em) rotate(0deg);
-    }
-
-    .moon_icon {
-        position: absolute;
-        height: 1em;
-        width: 1em;
-        color: #ffffff;
-    }
-
-    .moon_icon_wrapper {
-        position: absolute;
-        height: 1em;
-        width: 1em;
-        opacity: 0;
-        transform: translate(1.6em, 0.1em) rotate(0deg);
-        transform-origin: 50% 50%;
-        transition: opacity 150ms,
-            transform 500ms cubic-bezier(0.26, 2.5, 0.46, 0.71);
-    }
-
-    .toggle_checkbox:checked ~ .toggle_slot .moon_icon_wrapper {
-        opacity: 1;
-        transform: translate(1.6em, 0.1em) rotate(-15deg);
+    svg {
+        font-size: 1.2em;
+        margin-top: 3.5px;
     }
 }
 
