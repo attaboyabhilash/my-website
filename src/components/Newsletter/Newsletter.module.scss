@@ -2,18 +2,60 @@
     max-width: 500px;
     margin: 30px auto;
     margin-bottom: 0px;
+    padding: 20px;
     padding-bottom: 50px;
+    h3 {
+        margin-bottom: 0px;
+    }
+    small.sub_title {
+        opacity: 0.75;
+    }
     .sub_form {
         display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
         input {
             margin-right: 5px;
+            width: 175%;
         }
         button {
+            margin-right: 0px;
             background-color: #00b5ad;
             border-color: #00b5ad;
+            width: 130px;
         }
     }
-    .sub_title {
-        opacity: 0.75;
+}
+
+@media only screen and (max-width: 500px) {
+    .main_block {
+        max-width: none;
+        width: 100%;
+        padding: 0px;
+        padding-bottom: 50px;
+        h3 {
+            margin-bottom: 5px;
+        }
+        .sub_form {
+            justify-content: unset;
+            input {
+                width: unset;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .main_block {
+        .sub_form {
+            display: block;
+            margin-top: 15px;
+            input {
+                width: 100%;
+            }
+            button {
+                width: 100%;
+            }
+        }
     }
 }
