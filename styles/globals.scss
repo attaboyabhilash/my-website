@@ -18,6 +18,12 @@ a:hover {
     color: #40e0d0 !important;
 }
 
+.prism-code {
+    overflow: hidden !important;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
 .ant-result.ant-result-404 {
     .ant-result-title {
         font-size: 4em;

@@ -6,6 +6,7 @@ import Head from "next/head"
 import BlogMetaData from "../../src/utils/BlogMetaData"
 import Tags from "../../src/components/Tags"
 import { IoArrowBackSharp } from "react-icons/io5"
+import PreWrapper from "../../src/utils/PreWrapper"
 
 <Meta
     title="How to structure your react application | AttaboyAbhilash"
@@ -105,31 +106,34 @@ React team tells us to structure our file/folders by two categories, **Feature T
 1. ### Feature Type
     You can place all your files such as js, css, test, etc. in one common folder grouped by the feature type.
 
-```
+<PreWrapper
+    code={`
 /common
-  -	Avatar.js
-  -	Avatar.css
-  -	APIUtils.js
-  -	APIUtils.test.js
+ - Avatar.js
+ - Avatar.css
+ - APIUtils.js
+ - APIUtils.test.js
 /feed
-  -	index.js
-  -	Feed.js
-  -	Feed.css
-  -	FeedStory.js
-  -	FeedStory.test.js
-  -	FeedAPI.js
+ - index.js
+ - Feed.js
+ - Feed.css
+ - FeedStory.js
+ - FeedStory.test.js
+ - FeedAPI.js
 /profile
-  -	index.js
-  -	Profile.js
-  -	ProfileHeader.js
-  -	ProfileHeader.css
-  -	ProfileAPI.js
-```
+ - index.js
+ - Profile.js
+ - ProfileHeader.js
+ - ProfileHeader.css
+ - ProfileAPI.js`.trim()}
+    language="jsx"
+/>
 
 2. ### File Type
     Another way to structure is by separating all file types in one particular folder, like all API files are in one folder, all css are in one folder, all js files are in one folder, and likewise.
 
-```
+<PreWrapper
+    code={`
 /api
   - APIUtils.js
   - APIUtils.test.js
@@ -137,18 +141,20 @@ React team tells us to structure our file/folders by two categories, **Feature T
   - UserAPI.js
 /components
   /scripts
-  	- Avatar.js
-  	- Feed.js
+    - Avatar.js
+    - Feed.js
     - FeedStory.js
-	- Profile.js
-  	- ProfileHeader.js
+    - Profile.js
+    - ProfileHeader.js
   /styles
-	- Avatar.css
-  	- Feed.css
-  	- ProfileHeader.css
+    - Avatar.css
+    - Feed.css
+    - ProfileHeader.css
   /tests
-	  - FeedStory.test.js
-```
+    - FeedStory.test.js
+  `.trim()}
+    language="jsx"
+/>
 
 I am not sure if anyone uses this approach but React Team gave this as a way to start. You can find the ReactJS blog <a href="https://reactjs.org/docs/faq-structure.html" target="_blank">here</a>
 
@@ -156,8 +162,9 @@ I am not sure if anyone uses this approach but React Team gave this as a way to 
 
 You can structure you files/folder by file types where all the files are present in the src folder. Each component irrespective of its size is inside the **components** folder. All the routes are inside **router** folder. All the files that are wrappers like the **Layout.js** can be placed inside the **containers** folder. This method will look something like this.
 
-```
-/src
+<PreWrapper
+    code={`
+  /src
   /components
     - Header.js
     - Counter.js
@@ -178,7 +185,7 @@ You can structure you files/folder by file types where all the files are present
     /images
     /videos
     /vectors
-  - routes
+  /routes
     - PublicRoute.js
     - PrivateRoute.js
     - AdminRoute.js
@@ -189,7 +196,9 @@ You can structure you files/folder by file types where all the files are present
   /utils
     - maps.js
     - countries.js
-```
+  `.trim()}
+    language="jsx"
+/>
 
 When you structure your files by type, as your application grows, it often becomes difficult to maintain. By the time you realize this, it’s too late and you will have to invest a lot of time and money to change everything, or to support what you have for the next few years.
 
@@ -204,8 +213,9 @@ To work properly, they should follow these rules:
 -   A service can define nested services. It cannot use or define components or scenes.
 -   Nested features can only use from its parent.
 
-```
-/src
+<PreWrapper
+    code={`
+  /src
   /components
     /Button
     /Notifications
@@ -249,7 +259,9 @@ To work properly, they should follow these rules:
       - reducer.js
   - index.js
   - store.js
-```
+  `.trim()}
+    language="jsx"
+/>
 
 I would recommend you to limit the number of nested folders to 3–4 levels. Normalizing your structure by limiting nesting will avoid complexity and help you maximize the reusability of your code.
 
