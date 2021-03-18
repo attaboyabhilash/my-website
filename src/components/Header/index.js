@@ -58,12 +58,12 @@ const Header = () => {
                     onClose={onClose}
                     visible={visible}
                     headerStyle={
-                        darkMode
+                        darkMode === "dark"
                             ? { backgroundColor: "#333" }
                             : { backgroundColor: "#FFF" }
                     }
                     drawerStyle={
-                        darkMode
+                        darkMode === "dark"
                             ? { backgroundColor: "#333" }
                             : { backgroundColor: "#FFF" }
                     }

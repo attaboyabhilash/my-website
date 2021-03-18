@@ -11,7 +11,7 @@ const AboutDetailsCard = () => {
             hoverable
             className={styles.about_card}
             style={
-                darkMode
+                darkMode === "dark"
                     ? {
                           backgroundColor: "#212121",
                           borderColor: "#191919",

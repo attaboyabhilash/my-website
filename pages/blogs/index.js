@@ -21,7 +21,7 @@ const Blogs = () => {
                         <Card
                             key={post.id}
                             style={
-                                darkMode
+                                darkMode === "dark"
                                     ? {
                                           width: 300,
                                           margin: "30px auto",
@@ -71,7 +71,7 @@ const Blogs = () => {
                                     return (
                                         <Tag
                                             style={
-                                                darkMode
+                                                darkMode === "dark"
                                                     ? {
                                                           backgroundColor:
                                                               "#000",

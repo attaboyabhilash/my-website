@@ -25,7 +25,7 @@ const Resume = () => {
                 hoverable
                 className={styles.resume_card}
                 style={
-                    darkMode
+                    darkMode === "dark"
                         ? {
                               backgroundColor: "#212121",
                               borderColor: "#191919",

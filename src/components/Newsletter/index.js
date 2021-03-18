@@ -13,7 +13,7 @@ const index = () => {
             <Form className={styles.sub_form}>
                 <Input
                     style={
-                        darkMode
+                        darkMode === "dark"
                             ? {
                                   backgroundColor: "#333",
                                   color: "#f4f4f4",

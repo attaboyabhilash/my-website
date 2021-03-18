@@ -11,7 +11,7 @@ const Layout = props => {
         <>
             <div
                 className={
-                    darkMode === true ? styles.dark_mode : styles.light_mode
+                    darkMode === "dark" ? styles.dark_mode : styles.light_mode
                 }
             >
                 <Meta />

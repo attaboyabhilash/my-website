@@ -108,23 +108,9 @@ const Footer = () => {
                         <Link href="/portfolio">
                             <a>Work Experience</a>
                         </Link>
-                    </div>
-                </div>
-                <div className={styles.footer_link_head}>
-                    <Link href="/about">
-                        <a>Contact</a>
-                    </Link>
-                    <div className={styles.footer_links}>
+                        <br />
                         <Link href="/about">
                             <a>Contact Me</a>
-                        </Link>
-                        <br />
-                        <Link href="/social">
-                            <a>Social</a>
-                        </Link>
-                        <br />
-                        <Link href="/sponser">
-                            <a>Sponser</a>
                         </Link>
                     </div>
                 </div>

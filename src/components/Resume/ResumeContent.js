@@ -13,7 +13,7 @@ const ResumeContent = () => {
     return (
         <div
             style={
-                darkMode
+                darkMode === "dark"
                     ? {
                           backgroundColor: "#333",
                           padding: "20px",

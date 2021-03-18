@@ -8,7 +8,7 @@ const index = ({ tags }) => {
         return (
             <Tag
                 style={
-                    darkMode
+                    darkMode === "dark"
                         ? {
                               backgroundColor: "#000",
                               borderColor: "#000",

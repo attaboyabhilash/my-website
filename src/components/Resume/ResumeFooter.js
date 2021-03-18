@@ -7,10 +7,12 @@ const ResumeFooter = () => {
     const { darkMode } = useContext(ThemeContext)
     return (
         <div className={styles.resume_footer}>
-            <span>Download {darkMode ? "Dark" : "Light"} Resume : </span>
+            <span>
+                Download {darkMode === "dark" ? "Dark" : "Light"} Resume :{" "}
+            </span>
             <a
                 href={
-                    darkMode
+                    darkMode === "dark"
                         ? "/assets/resume/Abhilash_CV_Dark.docx"
                         : "/assets/resume/Abhilash_CV_Light.docx"
                 }

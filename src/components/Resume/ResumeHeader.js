@@ -9,7 +9,7 @@ const ResumeHeader = () => {
             <div
                 className={styles.small_head}
                 style={
-                    darkMode
+                    darkMode === "dark"
                         ? {
                               backgroundColor: "#666",
                           }

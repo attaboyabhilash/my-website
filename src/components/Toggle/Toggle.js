@@ -13,7 +13,7 @@ const Toggle = () => {
                 checkedChildren={<FiMoon />}
                 unCheckedChildren={<FiSun />}
                 onChange={toggleMode}
-                checked={darkMode}
+                checked={darkMode === "dark" ? true : false}
             />
         </div>
     )

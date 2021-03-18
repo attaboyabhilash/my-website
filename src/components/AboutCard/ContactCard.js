@@ -44,7 +44,7 @@ const ContactCard = () => {
             hoverable
             className={styles.about_card}
             style={
-                darkMode
+                darkMode === "dark"
                     ? {
                           backgroundColor: "#212121",
                           borderColor: "#191919",
@@ -76,7 +76,7 @@ const ContactCard = () => {
                         <Input
                             placeholder="ex. John Doe"
                             style={
-                                darkMode
+                                darkMode === "dark"
                                     ? {
                                           backgroundColor: "#333",
                                           color: "#f4f4f4",
@@ -104,7 +104,7 @@ const ContactCard = () => {
                         <Input
                             placeholder="someone@example.com"
                             style={
-                                darkMode
+                                darkMode === "dark"
                                     ? {
                                           backgroundColor: "#333",
                                           color: "#f4f4f4",
@@ -131,7 +131,7 @@ const ContactCard = () => {
                         <Input
                             placeholder="Let’s get in touch..."
                             style={
-                                darkMode
+                                darkMode === "dark"
                                     ? {
                                           backgroundColor: "#333",
                                           color: "#f4f4f4",
@@ -159,7 +159,7 @@ const ContactCard = () => {
                             rows={4}
                             placeholder="Hi Abhilash, ......"
                             style={
-                                darkMode
+                                darkMode === "dark"
                                     ? {
                                           backgroundColor: "#333",
                                           color: "#f4f4f4",
