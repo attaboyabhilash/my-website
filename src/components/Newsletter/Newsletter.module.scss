@@ -1,9 +1,7 @@
 .main_block {
     max-width: 500px;
-    margin: 30px auto;
-    margin-bottom: 0px;
+    margin: 0px auto;
     padding: 20px;
-    padding-bottom: 50px;
     h3 {
         margin-bottom: 0px;
     }
@@ -16,13 +14,13 @@
         margin-top: 15px;
         input {
             margin-right: 5px;
-            width: 175%;
+            width: 180%;
         }
         button {
             margin-right: 0px;
             background-color: #00b5ad;
             border-color: #00b5ad;
-            width: 130px;
+            width: 120px;
         }
     }
 }
@@ -32,20 +30,18 @@
         max-width: none;
         width: 100%;
         padding: 0px;
-        padding-bottom: 50px;
         h3 {
             margin-bottom: 5px;
         }
         .sub_form {
-            justify-content: unset;
             input {
-                width: unset;
+                width: 150%;
             }
         }
     }
 }
 
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 414px) {
     .main_block {
         .sub_form {
             display: block;

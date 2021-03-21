@@ -96,7 +96,22 @@ const Blogs = () => {
                     )
                 })}
             </div>
-            {/* <Newsletter /> */}
+            <Card
+                className={styles.newsletter_card}
+                style={
+                    darkMode === "dark"
+                        ? {
+                              backgroundColor: "#121212",
+                          }
+                        : {
+                              backgroundColor: "#f0f0f0",
+                          }
+                }
+                hoverable
+            >
+                <Newsletter />
+            </Card>
+            <div className={styles.empty_div}></div>
         </>
     )
 }

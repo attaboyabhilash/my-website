@@ -134,6 +134,17 @@
     }
 }
 
+.newsletter_card {
+    max-width: 600px;
+    margin: auto;
+    border: 0px;
+}
+
+.empty_div {
+    width: 100px;
+    height: 100px;
+}
+
 @media only screen and (max-width: 950px) {
     .blog_details {
         width: 80%;

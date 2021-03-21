@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "image": "/assets/images/PernStackTodo.PNG",
+        "title": "Todo-List with Authentication",
+        "description": "The best Todo App you will find on the internet. Build on top of React and Node with Postgres Database.",
+        "link": "https://todo-list-fullstack-app.herokuapp.com/"
+    },
+    {
+        "id": 2,
+        "image": "/assets/images/NetflixClone.PNG",
+        "title": "Netflix Clone Application",
+        "description": "The exact clone of Netflix application made from start with React and Node",
+        "link": "https://netflix-clone-3609.web.app/"
+    },
+    {
+        "id": 3,
+        "image": "/assets/images/Bubbles.PNG",
+        "title": "Bubbles Social Media Application",
+        "description": "The modified clone of Twitter with the ability to write bubbles on timeline. Build on top of React and Node with Firebase.",
+        "link": "https://bubbles-ee7dc.web.app/"
+    },
+    {
+        "id": 4,
+        "image": "/assets/images/Filter.PNG",
+        "title": "Filter Search Application",
+        "description": "A simple filtering application based on ratings, company, product etc. with extra feature of searching with dates and search bar.",
+        "link": "https://agitated-almeida-f5432d.netlify.app/"
+    },
+    {
+        "id": 5,
+        "image": "/assets/images/PomodoroClock.PNG",
+        "title": "Pomodoro Clock Application",
+        "description": "A simple pomodoro clock that is build with vanilla javascript.",
+        "link": "https://attaboyabhilash.github.io/pomodoroClock/"
+    },
+    {
+        "id": 6,
+        "image": "/assets/images/WeatherApp.PNG",
+        "title": "Weather Application",
+        "description": "This application helps to find the temperature and other weather information based on the city you enter.",
+        "link": "https://attaboyabhilash.github.io/weatherApp/"
+    }
+]

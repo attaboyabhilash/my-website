@@ -1,6 +1,7 @@
 import { useState, useContext, useRef } from "react"
-import { Form, Input, Button } from "antd"
+import { Form, Input, Button, message } from "antd"
 import styles from "./Newsletter.module.scss"
+import axios from "axios"
 import { ThemeContext } from "../../context/ThemeContext"
 
 const index = () => {
@@ -9,9 +10,35 @@ const index = () => {
     const formRef = useRef()
     const [form] = Form.useForm()
 
-    const onFinish = values => {
+    const onFinish = async values => {
         setIsLoading(true)
-        console.log(values)
+        try {
+            const response = await axios.post("/api/addSubscribers", {
+                email: values.email,
+            })
+            const returnedValue = await response
+            if (
+                returnedValue.data.message &&
+                returnedValue.data.message === "Email already exist"
+            ) {
+                message.warning({
+                    content: "You have already subscribed to the Newsletter!",
+                })
+            } else if (returnedValue.status === 200) {
+                message.success({
+                    content:
+                        "You have successfully subscribed to the Newsletter!",
+                })
+            } else if (returnedValue.status === 500) {
+                message.error({
+                    content:
+                        "There was an error while subscribing to the Newsletter!",
+                })
+            }
+        } catch (error) {
+            console.log("Error", error.message)
+        }
+        formRef.current !== null && formRef.current.resetFields()
         setIsLoading(false)
     }
     return (

@@ -1,0 +1,49 @@
+.margin_div {
+    padding: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5em, 25em));
+    margin: auto;
+    margin-bottom: 0px;
+    justify-content: center;
+    .ant_card {
+        position: relative;
+        img {
+            height: 140px !important;
+        }
+        .ant_body {
+            margin-top: -30px !important;
+            margin-bottom: 25px;
+        }
+        .action {
+            font-family: sans-serif;
+            color: #40e0d0 !important;
+            position: absolute;
+            right: 15px;
+            bottom: 10px;
+            a {
+                font-size: 0.85em;
+                font-weight: 300;
+                color: #00b5ad !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    .margin_div {
+        grid-template-columns: repeat(auto-fit, minmax(5em, 20em));
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .margin_div {
+        grid-template-columns: repeat(auto-fit, minmax(5em, 25em));
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    .margin_div {
+        grid-template-columns: repeat(auto-fit, minmax(5em, 20em));
+    }
+}
