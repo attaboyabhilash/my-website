@@ -6,6 +6,7 @@ import styles from "./Header.module.scss"
 import { IoMenuOutline } from "react-icons/io5"
 import { Drawer } from "antd"
 import { ThemeContext } from "../../context/ThemeContext"
+import Arrow from "../Arrow"
 
 const Header = () => {
     const { darkMode } = useContext(ThemeContext)
@@ -48,6 +49,7 @@ const Header = () => {
                         <a>Portfolio</a>
                     </Link>
                     <Toggle />
+                    {darkMode === "light" ? <Arrow /> : null}
                 </div>
                 <div className={styles.menu_bar} onClick={showDrawer}>
                     <IoMenuOutline />

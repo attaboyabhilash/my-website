@@ -2,10 +2,6 @@ import React, { useState, useEffect, createContext } from "react"
 
 export const ThemeContext = createContext()
 
-// const initialState =
-//     typeof window !== "undefined" &&
-//     JSON.parse(window.localStorage.getItem("theme"))
-
 function ThemeContextProvider(props) {
     const [darkMode, setDarkMode] = useState("light")
 
@@ -15,7 +11,7 @@ function ThemeContextProvider(props) {
 
     useEffect(() => {
         const local = JSON.parse(window.localStorage.getItem("theme"))
-        setDarkMode(local)
+        local !== null ? setDarkMode(local) : setDarkMode("light")
     }, [])
 
     useEffect(() => {
