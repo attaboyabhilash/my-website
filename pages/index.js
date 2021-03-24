@@ -44,7 +44,7 @@ const Home = () => {
                         alt="vector-art-by-freepik"
                         width="400px"
                         height="400px"
-                        priority
+                        priority={true}
                     />
                 </div>
             </div>

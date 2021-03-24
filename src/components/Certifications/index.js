@@ -22,7 +22,7 @@ const index = () => {
                     width="1200px"
                     height="300px"
                     className={styles.certificate}
-                    priority
+                    priority={true}
                 />
             </div>
             <div>
@@ -32,7 +32,7 @@ const index = () => {
                     width="1200px"
                     height="300px"
                     className={styles.certificate}
-                    priority
+                    priority={true}
                 />
             </div>
             <div>
@@ -42,7 +42,7 @@ const index = () => {
                     width="1200px"
                     height="300px"
                     className={styles.certificate}
-                    priority
+                    priority={true}
                 />
             </div>
         </Carousel>

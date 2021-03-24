@@ -36,7 +36,7 @@ const AboutDetailsCard = () => {
                     width="275px"
                     height="250px"
                     className={styles.about_image_}
-                    priority
+                    priority={true}
                 />
             </div>
         </Card>

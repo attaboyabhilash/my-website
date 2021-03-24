@@ -10,6 +10,7 @@ const index = () => {
                 alt="arrow"
                 width="50px"
                 height="50px"
+                priority={true}
             />
             <p className={styles.para}>Switch To Try The Dark Mode</p>
         </div>

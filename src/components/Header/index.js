@@ -31,7 +31,7 @@ const Header = () => {
                             width="140px"
                             height="70px"
                             className={styles.main_logo}
-                            priority
+                            priority={true}
                         />
                     </a>
                 </Link>
