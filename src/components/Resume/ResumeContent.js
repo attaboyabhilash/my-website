@@ -16,23 +16,19 @@ const ResumeContent = () => {
                 darkMode === "dark"
                     ? {
                           backgroundColor: "#333",
-                          padding: "20px",
-                          paddingTop: "70px",
                       }
                     : {
                           backgroundColor: "#f4f4f4",
-                          padding: "20px",
-                          paddingTop: "70px",
                       }
             }
             className={styles.flexer}
         >
-            <div>
+            <div className={styles.left_block}>
                 <ContactInfo />
                 <SkillDetails />
                 <Projects />
             </div>
-            <div>
+            <div className={styles.right_block}>
                 <Education />
                 <Trainings />
                 <Certifications />
