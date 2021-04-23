@@ -2,14 +2,20 @@
 
 .main_block {
     position: absolute;
-    right: 7%;
-    top: 70px;
+    right: 10.4%;
+    top: 30px;
     text-align: center;
     font-family: "Gochi Hand", cursive;
     animation: MoveUpDown 2s linear infinite;
+    display: flex;
+    .emptyPara {
+        width: 100%;
+        height: 30px;
+    }
     .para {
+        margin-right: 5px;
         width: 100px;
-        font-size: 1em;
+        font-size: 0.9em;
         font-weight: 600;
     }
 }
@@ -17,15 +23,15 @@
 @keyframes MoveUpDown {
     0%,
     100% {
-        top: 70px;
+        top: 30px;
     }
     50% {
-        top: 80px;
+        top: 40px;
     }
 }
 
 @media only screen and (max-width: 1200px) {
     .main_block {
-        right: 6.5%;
+        right: 10.5%;
     }
 }

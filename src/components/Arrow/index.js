@@ -5,14 +5,17 @@ import styles from "./Arrow.module.scss"
 const index = () => {
     return (
         <div className={styles.main_block}>
+            <div>
+                <p className={styles.emptyPara}></p>
+                <p className={styles.para}>Switch To Try The Dark Mode</p>
+            </div>
             <Image
-                src="/assets/up-arrow.svg"
+                src="/assets/right-up-arrow.svg"
                 alt="arrow"
-                width="50px"
-                height="50px"
+                width="40px"
+                height="40px"
                 priority={true}
             />
-            <p className={styles.para}>Switch To Try The Dark Mode</p>
         </div>
     )
 }
