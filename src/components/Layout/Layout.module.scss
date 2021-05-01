@@ -35,6 +35,10 @@
             border-right: 1px solid #ddd !important;
         }
     }
+    code {
+        background-color: #ddd !important;
+        color: #121212 !important;
+    }
 }
 
 .dark_mode {
@@ -73,6 +77,10 @@
         li:first-child {
             border-right: 1px solid #333 !important;
         }
+    }
+    code {
+        background-color: #121212 !important;
+        color: #f4f4f4 !important;
     }
 }
 
