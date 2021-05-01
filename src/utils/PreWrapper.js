@@ -11,7 +11,7 @@ const PreWrapper = props => {
         <Highlight
             {...defaultProps}
             theme={darkMode === "dark" ? darkTheme : lightTheme}
-            code={props.code}
+            code={props.code.trim()}
             language={props.language}
         >
             {({ className, style, tokens, getLineProps, getTokenProps }) => (

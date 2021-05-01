@@ -8,5 +8,21 @@
         "slug": "how-to-structure-your-react-application",
         "pubDate": "March 18, 2021",
         "readMin": 3
+    },
+    {
+        "id": "2",
+        "thumbnail": "https://images.unsplash.com/photo-1573801209310-61a724e4052a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80.jpg",
+        "title": "Redux Toolkit – Future of Redux",
+        "description": "Redux is a very popular library for state management. But it become very tiresome to create and initialize the store, create the reducers and the corresponding action while maintaining them in separate folders. All these problems are fixed in the latest version of Redux called Redux Toolkit where all the reducers, actions and initial state are present in a single slice which makes it easy to manage.",
+        "tags": [
+            "React",
+            "Redux",
+            "Redux Toolkit",
+            "State Management",
+            "Frontend"
+        ],
+        "slug": "redux-toolkit-future-of-redux",
+        "pubDate": "May 01, 2021",
+        "readMin": 3
     }
 ]
