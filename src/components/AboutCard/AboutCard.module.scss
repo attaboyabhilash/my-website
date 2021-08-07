@@ -1,103 +1,107 @@
 .about_card {
-    position: relative;
-    width: 100%;
-    margin: 50px 0px;
-    .about_image {
-        position: absolute;
-        right: 2px;
-        top: 2.5px;
-        z-index: 10;
-        width: 275px;
-        height: 190px;
-        overflow: hidden;
-        border-radius: 2px;
-        img {
-            margin-top: -50px;
-        }
+  position: relative;
+  width: 100%;
+  margin: 50px 0px;
+  .about_image {
+    position: absolute;
+    right: 2px;
+    top: 2.5px;
+    z-index: 10;
+    width: 275px;
+    height: 190px;
+    overflow: hidden;
+    border-radius: 2px;
+    img {
+      margin-top: -50px;
     }
+  }
 
-    .card_text h3 {
-        margin: 0px;
-    }
+  .card_text h3 {
+    margin: 0px;
+  }
 
-    .card_text small {
-        font-size: 0.8em;
-    }
+  .card_text small {
+    font-size: 0.8em;
+  }
 
-    .card_text p {
-        line-height: 1em;
-        font-size: 0.9em;
-    }
+  .card_text p {
+    line-height: 1em;
+    font-size: 0.9em;
+  }
 
-    .dark_mode .card_text p {
-        color: #f4f4f4;
-    }
+  .dark_mode .card_text p {
+    color: #f4f4f4;
+  }
 
-    .first {
-        margin-top: 25px;
-    }
+  .first {
+    margin-top: 25px;
+  }
 }
 
 .contact_form {
-    text-align: center;
-    width: 60%;
-    margin: auto;
-    h3 {
-        font-size: 1.6em;
-        font-weight: 600;
-        margin-top: 20px;
-    }
-    button {
-        width: 150px;
-        background-color: #00b5ad !important;
-        border-color: #00b5ad !important;
-    }
-    button:hover {
-        background-color: #00b5ad;
-        border-color: #00b5ad;
-    }
-    button:active {
-        background-color: #00b5ad;
-        border-color: #00b5ad;
-    }
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  h3 {
+    font-size: 1.6em;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  button {
+    width: 150px;
+    line-height: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    background-color: #00b5ad !important;
+    border-color: #00b5ad !important;
+    margin-top: 20px;
+  }
+  button:hover {
+    background-color: #00b5ad;
+    border-color: #00b5ad;
+  }
+  button:active {
+    background-color: #00b5ad;
+    border-color: #00b5ad;
+  }
 }
 
 @media only screen and (max-width: 800px) {
-    .about_card {
-        .about_image {
-            right: 10px;
-            top: 10px;
-            width: 150px;
-            height: 150px;
-            img {
-                border-radius: 3px;
-            }
-        }
+  .about_card {
+    .about_image {
+      right: 10px;
+      top: 10px;
+      width: 150px;
+      height: 150px;
+      img {
+        border-radius: 3px;
+      }
+    }
 
-        .card_text p {
-            width: 200px;
-            line-height: 1.4em;
-        }
+    .card_text p {
+      width: 200px;
+      line-height: 1.4em;
     }
-    .contact_form {
-        text-align: center;
-        width: 100%;
-        margin: auto;
-    }
+  }
+  .contact_form {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-    .about_card {
-        .about_image {
-            right: 10px;
-            top: 10px;
-            width: 100px;
-            height: 100px;
-        }
-
-        .card_text p {
-            width: 200px;
-            line-height: 1.4em;
-        }
+  .about_card {
+    .about_image {
+      right: 10px;
+      top: 10px;
+      width: 100px;
+      height: 100px;
     }
+
+    .card_text p {
+      width: 200px;
+      line-height: 1.4em;
+    }
+  }
 }

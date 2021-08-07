@@ -1,114 +1,123 @@
 .hero_section {
-    padding: 150px 0px;
-    .flexer {
-        display: flex;
-        justify-content: space-between;
+  padding: 150px 0px;
+  .flexer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .left_content {
+    h1 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 2.5em;
     }
-    .left_content {
-        h1 {
-            font-family: "Montserrat", sans-serif;
-            font-weight: 700;
-            font-size: 2.4em;
-        }
-        p {
-            width: 357px;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            span {
-                color: #00b5ad;
-            }
-            span::before {
-                content: "";
-                animation: fluctuate infinite 10s;
-                //transition: 200ms ease-in-out;
-            }
-        }
-        .__buttons {
-            button {
-                margin-right: 30px;
-            }
-            button:first-child {
-                background-color: #00b5ad;
-                border-color: #00b5ad;
-            }
-            button:last-child {
-                background: #ff4d4f !important;
-                border-color: #ff4d4f !important;
-            }
-        }
+    p {
+      width: 425px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      font-size: 1.2em;
+      span {
+        color: #00b5ad;
+      }
+      span::before {
+        content: "";
+        animation: fluctuate infinite 10s;
+        //transition: 200ms ease-in-out;
+      }
     }
+    .__buttons {
+      button {
+        margin-right: 30px;
+        font-family: "Montserrat", sans-serif;
+        line-height: 0;
+        font-weight: 500;
+        span {
+          font-family: "Montserrat", sans-serif;
+          line-height: 0;
+          font-weight: 500;
+        }
+      }
+      button:first-child {
+        background-color: #00b5ad;
+        border-color: #00b5ad;
+      }
+      button:last-child {
+        background: #ff4d4f !important;
+        border-color: #ff4d4f !important;
+      }
+    }
+  }
 }
 
 @keyframes fluctuate {
-    0% {
-        color: #00b5ad;
-        content: "Javascript";
-    }
-    20% {
-        color: #ff4d4f;
-        content: "ReactJs";
-    }
-    40% {
-        color: #00b5ad;
-        content: "NodeJs";
-    }
-    60% {
-        color: #ff4d4f;
-        content: "Express";
-    }
-    80% {
-        color: #00b5ad;
-        content: "MongoDB";
-    }
-    100% {
-        color: #ff4d4f;
-        content: "Postgres";
-    }
+  0% {
+    color: #00b5ad;
+    content: "Javascript";
+  }
+  20% {
+    color: #ff4d4f;
+    content: "ReactJs";
+  }
+  40% {
+    color: #00b5ad;
+    content: "NodeJs";
+  }
+  60% {
+    color: #ff4d4f;
+    content: "Express";
+  }
+  80% {
+    color: #00b5ad;
+    content: "MongoDB";
+  }
+  100% {
+    color: #ff4d4f;
+    content: "Postgres";
+  }
 }
 
 @media only screen and (max-width: 1000px) {
-    .hero_section {
-        .left_content {
-            h1 {
-                font-size: 2em;
-            }
-            p {
-                width: 300px;
-            }
-        }
-        img {
-            width: 300px;
-        }
+  .hero_section {
+    .left_content {
+      h1 {
+        font-size: 2em;
+      }
+      p {
+        width: 300px;
+      }
     }
+    img {
+      width: 300px;
+    }
+  }
 }
 
 @media only screen and (max-width: 800px) {
-    .hero_section {
-        text-align: center;
-        padding: 100px 0px;
-        .flexer {
-            display: block;
-        }
-        .left_content {
-            p {
-                width: 200px;
-                margin: 20px auto;
-            }
-            .__buttons {
-                button {
-                    margin: 25px auto;
-                    margin-bottom: 50px;
-                }
-                button:first-child {
-                    margin-right: 30px;
-                }
-                button:last-child {
-                    margin-right: 0px;
-                }
-            }
-        }
-        img {
-            width: 300px;
-        }
+  .hero_section {
+    text-align: center;
+    padding: 100px 0px;
+    .flexer {
+      display: block;
     }
+    .left_content {
+      p {
+        width: 200px;
+        margin: 20px auto;
+      }
+      .__buttons {
+        button {
+          margin: 25px auto;
+          margin-bottom: 100px;
+        }
+        button:first-child {
+          margin-right: 30px;
+        }
+        button:last-child {
+          margin-right: 0px;
+        }
+      }
+    }
+    img {
+      width: 300px;
+    }
+  }
 }

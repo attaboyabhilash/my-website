@@ -4,7 +4,7 @@ import { useRouter } from "next/router"
 import Layout from "../src/components/Layout"
 import { Spin } from "antd"
 import "../styles/globals.scss"
-import "antd/dist/antd.css"
+import "../styles/antd.css"
 
 const MyApp = ({ Component, pageProps }) => {
     const router = useRouter()
