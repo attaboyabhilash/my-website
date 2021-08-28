@@ -21,7 +21,6 @@
       span::before {
         content: "";
         animation: fluctuate infinite 10s;
-        //transition: 200ms ease-in-out;
       }
     }
     .__buttons {
@@ -36,14 +35,6 @@
           font-weight: 500;
         }
       }
-      button:first-child {
-        background-color: #00b5ad;
-        border-color: #00b5ad;
-      }
-      button:last-child {
-        background: #ff4d4f !important;
-        border-color: #ff4d4f !important;
-      }
     }
   }
 }
@@ -55,11 +46,11 @@
   }
   20% {
     color: #ff4d4f;
-    content: "ReactJs";
+    content: "ReactJS";
   }
   40% {
     color: #00b5ad;
-    content: "NodeJs";
+    content: "NodeJS";
   }
   60% {
     color: #ff4d4f;
